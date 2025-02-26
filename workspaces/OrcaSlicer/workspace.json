@@ -3,7 +3,6 @@
   "description": "Orca Slicer is a fork of Bambu Studio.",
   "image_src": "orcaslicer.png",
   "docker_registry": "ghcr.io",
-  "name": "ghcr.io/michaeljones32/kasm-orcaslicer:latest",
   "cores": 2,
   "memory": 2768,
   "gpu_count": 0,
@@ -27,8 +26,13 @@
     "arm64"
   ],
   "compatibility": [
-    "1.13.x",
-    "1.14.x"
-  ],
-  "uncompressed_size_mb": 3450
+    {
+      "version": "1.17.x",
+      "image": "ghcr.io/michaeljones32/kasm-orcaslicer:latest",
+      "uncompressed_size_mb": 3450,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
 }
